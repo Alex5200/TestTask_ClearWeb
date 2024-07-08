@@ -1,0 +1,13 @@
+@import url("./font-connect.css");
+
+.header-text{
+    color: #353A5A;
+}
+*{
+    font-style: Raleway-Regular;
+}
+.wavy {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #FA9F42;
+  }
