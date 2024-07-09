@@ -11,10 +11,23 @@
 
 </head>
 <body class="">
- 
+    <style>
+        .way:hover{
+            text-decoration-line: underline; 
+            text-decoration-style: wavy; 
+            text-decoration-color: #FA9F42; 
+            text-underline-offset: 6px;
+        }
+        .backgroundNotebook{
+            background-image: url("./src/img/connectEmentor/photo.png");
+            height: 578px;
+        }
+        .backgroundNotebook::after{
+           }
+    </style>
     <header >
-        <nav class="flex max-md:flex-col z-10 bg-[#10B582]  max-md:w-[986px] max-sm:w-[1206px] mx-auto relative max-md:justify-center max-md:items-left items-center  top-0  md:px-96 pt-10">
-            <button onclick="hamburger()" class="md:hidden absolute top-10 right-10"><img class="w-12" src="./src/img/burger-menu-svgrepo-com.svg"/></button>
+        <nav class="max-sm:w-[] max-md:w-full   flex max-xl:flex-col z-10 bg-[#10B582]   mx-auto relative max-md:justify-center max-md:items-left items-center  top-0  md:px-96 pt-10">
+            <button onclick="hamburger()" class="md:hidden absolute top-10 right-20"><img class="w-12" src="./src/img/burger-menu-svgrepo-com.svg"/></button>
             <a id="hamburgerAction" class="md:w-[14.2%] max-md:hidden w-6/6 text-[#FDFDFD] way text-center" style="  ">О нас</a>
             <a id="hamburgerAction" class="md:w-[14.2%] max-md:hidden w-6/6 text-[#FDFDFD] way text-center max-md:mt-6 ">Платформа</a>
             <a id="hamburgerAction" class="md:w-[14.2%] max-md:hidden w-6/6  text-[#FDFDFD] way text-center max-md:mt-6" href="./curse.html">Курсы</a>
@@ -24,11 +37,11 @@
             <a id="hamburgerAction" class="md:w-[14.2%] max-md:hidden w-6/6  text-[#FDFDFD] way text-center max-md:mt-6">Контакты</a>
         </nav>
     </header>
-    <main class="">
-        <div class="bg-[#10B582] w-full max-md:w-[986px] max-sm:w-[1206px] max-lg:w-[1200px] h-full 	h-full relative flex justify-center w-1/3" id="from">
-            <div class="mr-60">
+    <main class="bg-white">
+        <div class="bg-[#10B582] w-full max-sm:w-[] max-md:w-[] h-full 	h-full relative flex justify-center w-1/3" id="from">
+            <div class="mr-60 max-md:hidden">
                 <div class="ml-20 " >
-                    <a class="w-1/12 mr-6" href="https://facebook.com">
+                    <a class="w-1/12 mr-6 max-sm:" href="https://facebook.com">
                         <img  src="./src/img/icon/Facebook_White.svg" href="facebook.com"/>
                     </a>
                     <a class="w-1/12 mr-6" href="https://vk.com">
@@ -39,18 +52,18 @@
                     </a>        
                 </div>
                 <div>
-                    <img class="ml-20 my-20" src="./src/img/main.png"/>
+                    <img class="ml-20 my-20 max-md:hidden" src="./src/img/main.png"/>
                 </div>
             </div>
-            <div class="w-1/3 my-auto ">
+            <div class="md:w-1/3 my-auto max-md:my-20 flex flex-col items-center">
                 <img class="mx-auto " src="./src/img/icon/logotype_White.svg"/>
-                <p class="text-5xl mt-10  text-center	text-[#FDFDFD] max-md:text-2xl">Образовательная
+                <p class="text-5xl mt-10  text-center	text-[#FDFDFD] max-md:text-xl  max-md:w-3/4">Образовательная
                     онлайн-платформа</p>
-                <p class="mt-10 text-center text-[#FDFDFD]  text-xs">Курсы и видео-лекции по дизайну, копирайтингу,
+                <p class="mt-10 text-center text-[#FDFDFD]  text-xs max-md:w-8/12">Курсы и видео-лекции по дизайну, копирайтингу,
                         SMM, таргету и многим другим направлениям</p>
-                <button class="border border-[#FA9F42] bg-[#FA9F42] md:h-10 h-15 rounded-br-lg rounded-tl-lg text-white md:w-2/4 max-md:w-1/2 max-md:ml-20   mt-10  md:ml-24 ">Все направления</button>
+                <button class="border border-[#FA9F42] bg-[#FA9F42] md:h-10 h-15 rounded-br-lg rounded-tl-lg text-white md:w-2/4 max-md:w-2/4 max-md:h-10   mt-10  ">Все направления</button>
             </div>
-            <div class="w-1/3 ml-60 ">
+            <div class="w-1/3 ml-60 max-md:hidden">
                 <img class="max-md:hidden" src="./src/img/2.png"/>
                 <div class="pl-16">
                     <a href="#from" id="next" style="writing-mode: vertical-rl; transform: scale(-1);" class="h-40 text-white ml-[66%] pl-16">
@@ -60,40 +73,40 @@
                 </div>
             </div>
         </div>
-        <div  class="bg-[#ffffff] w-full h-full relative flex justify-center w-1/3">
+        <div  class="bg-[#ffffff] w-full h-full relative flex justify-center ">
             <div class="flex-row">
-                <div class="flex mx-28 mt-20 bg-[#ffffff]" >
-                    <div class="flex-row w-1/4 p-2">
-                        <p class="text-center text-6xl text-[#10B582]">100+</p>
+                <div class="flex max-md:flex-col max-md:items-center md:mx-28 max-md:w-4/4 mt-20 bg-[#ffffff] " >
+                    <div class="flex-row w-1/4 p-2 max-md:w-2/4 max-md:mt-5">
+                        <p class="text-center text-6xl text-[#10B582] ">100+</p>
                         <p class="text-[#353A5A] mt-5 text-center"> теоретических и практических
                             курсов для разного уровня</p>
                     </div>
-                    <div class="flex-row w-1/4 p-2">
-                        <p class="text-center text-6xl text-[#10B582]">3000</p>
-                        <p class="text-[#353A5A] mt-5 text-center"> теоретических и практических
+                    <div class="flex-row w-1/4 p-2 max-md:w-2/4 max-md:mt-5">
+                        <p class="text-center text-6xl text-[#10B582] ">3000</p>
+                        <p class="text-[#353A5A] mt-5 text-center "> теоретических и практических
                             курсов для разного уровня</p>
                     </div>
-                    <div class="flex-row w-1/4 p-2">
+                    <div class="flex-row w-1/4 p-2 max-md:w-2/4 max-md:mt-5">
                         <p class="text-center text-6xl text-[#10B582]">15</p>
                         <p class="text-[#353A5A] mt-5 text-center"> теоретических и практических
                             курсов для разного уровня</p>
                     </div>
-                    <div class="flex-row w-1/4 p-2">
+                    <div class="flex-row w-1/4 p-2 max-md:w-2/4 max-md:mt-5">
                         <p class="text-center text-6xl text-[#10B582]">2000</p>
                         <p class="text-[#353A5A] mt-5 text-center"> теоретических и практических
                             курсов для разного уровня</p>
                     </div>
                 </div>
-                <div  class="flex my-14">
-                    <div class="w-1/2 ml-20 mr-10 ">
-                        <p class="text-6xl mb-10 mt-28"  >Учитесь у лучших</p>
+                <div  class="flex my-14 max-md:flex-col max-md:items-center">
+                    <div class="w-1/2 md:ml-20 mr-10 max-md:mr-0 max-md:w-2/4">
+                        <p class="text-6xl mb-10 mt-28 max-md:text-5xl"  >Учитесь у лучших</p>
                         <p class="text-[#353A5A]">Наши преподаватели – профессионалы, которые добились успеха в своей области. Лид-дизайнеры известных студий, маркетологи крупнейших компаний, редакторы популярных медиа: получайте опыт из первых рук, в любое время.
                            <br><br> Кураторы курсов – наши лучшие выпускники, будут помогать     и поддерживать вас на протяжении всего обучения. </p>
-                        <button class="border-[#10B582] bg-[#10B582] rounded-tr-lg text-xl rounded-bl-lg h-14 w-3/6 text-white my-10 transition-colors ease-in-out hover:border-[#FA9F42] hover:bg-[#FA9F42]">
+                        <button class="border-[#10B582] bg-[#10B582] rounded-tr-lg text-xl rounded-bl-lg h-14 w-3/6 max-md:w-full text-white my-10 transition-colors ease-in-out hover:border-[#FA9F42] hover:bg-[#FA9F42]">
                             Все преподаватели
                         </button>
                     </div>
-                    <div class="w-1/2  flex flex-warp grid grid-cols-3 gap-4 mt-10 mr-6">
+                    <div class="w-1/2  flex flex-warp grid grid-cols-3 gap-4 max-md:hidden mt-10 mr-6">
                         <div class="">
                             <img src="./src/img/main/1.jpg"/>
                             <p class="text-[#353A5A] text-center">Катя, ведущий дизайнер TailGroup</p>
@@ -123,13 +136,13 @@
             </div>
         </div>
         <div class="flex my-20 w-full h-full bg-[#10B582]" id="from">
-            <div class="w-1/2  ml-20 my-40 relative">
+            <div class="w-1/2  ml-20 my-40 relative max-md:hidden">
                 <img class="absolute left-10 -top-4 " style="z-index: 0;" src="./src/img/dash line.png"/>
                 <img class="rounded-tr-[120px]  " style="z-index: 1;" src="./src/img/photo.jpg"/>
             </div>
-            <div class="w-1/2 mr-20">
-                <p class=" text-6xl text-white mt-40">Выбирайте свой формат обучения</p>
-                <p class="text-white mt-10 w-3/4">Смотрите видео-лекции в удобное для вас время, обучайтесь на тренажере, участвуйте в интенсивных воркшопах
+            <div class="md:w-1/2 md:mr-20 max-md:flex max-md:flex-col max-md:items-center">
+                <p class=" text-6xl text-white mt-40 max-md:text-4xl max-md:w-2/4">Выбирайте свой формат обучения</p>
+                <p class="text-white mt-10 w-3/4 max-md:w-2/4">Смотрите видео-лекции в удобное для вас время, обучайтесь на тренажере, участвуйте в интенсивных воркшопах
                     с командой или проходите курс с гибким расписанием.
                     На нашей платформе каждый найдет подходящий формат.</p>
                 <button class="border-[#FA9F42] bg-[#FA9F42] rounded-tr-lg text-xl rounded-bl-lg h-14 w-3/6 text-white my-10">
@@ -137,58 +150,58 @@
                 </button>
             </div>
         </div>
-        <div class="flex my-28 w-full h-full bg-white">
-            <div class="flex-row justify-center justify-items-center mx-auto">
-                <div class=" text-center">
-                    <p class="text-6xl">Популярные курсы</p>
+        <div class="flex my-28 w-full h-full bg-white max-md:flex-col">
+            <div class="flex-row justify-center justify-items-center md:mx-auto max-md:items-center">
+                <div class=" text-center mx-md:mx-auto">
+                    <p class="text-6xl max-md:text-2xl ">Популярные курсы</p>
                 </div>
-                <div class="flex justify-center mt-16">
-                    <a href="google.com" class="border rounded w-60 h-52 mr-20 shadow-xl way">
+                <div class="flex justify-center mt-16 max-md:flex-col max-md:items-center">
+                    <a href="google.com" class="border rounded w-60 h-52 mr-20 max-md:mt-10 shadow-xl way">
                         <img src="./src/img/popularCurse/pic-3.svg" class="mx-auto p-4"/>
                         <p class="ml-4">Motion design</p>
                     </a>
-                    <a href="google.com" class="border rounded w-60 h-52 mr-20 shadow-xl way">
+                    <a href="google.com" class="border rounded w-60 h-52 mr-20 max-md:mt-10 shadow-xl way">
                         <img src="./src/img/popularCurse/pic-2.svg" class="mx-auto p-4"/>
                         <p class="ml-4">Таргет в Instagram</p>
                     </a>
-                    <a href="google.com" class="border rounded w-60 h-52 mr-20 shadow-xl way">
+                    <a href="google.com" class="border rounded w-60 h-52 mr-20 max-md:mt-10 shadow-xl way">
                         <img src="./src/img/popularCurse/pic-1.svg" class="mx-auto p-4"/>
                         <p class="ml-4">Эффектные презентации</p>
                     </a>
-                    <a href="google.com" class="border rounded w-60 h-52 shadow-xl way" >
+                    <a href="google.com" class="border rounded w-60 h-52 mr-20 max-md:mt-10 shadow-xl way" >
                         <img src="./src/img/popularCurse/pic.svg" class="mx-auto p-4"/>
                         <p class="ml-4">SMM-стратегия</p>
                     </a>
                 </div>
-                <div class="flex justify-center mt-10">
-                    <button class="border-[#10B582] bg-[#10B582] rounded-tr-lg text-xl rounded-bl-lg h-14 w-2/6 text-white my-10 transition-colors ease-in-out hover:border-[#FA9F42] hover:bg-[#FA9F42]">
-                        Все курсы
-                    </button>
+                <div class="flex justify-center items-center mt-10">
+                        <button class="border-[#10B582] bg-[#10B582] rounded-tr-lg text-xl rounded-bl-lg h-14 w-2/6 max-md:w-2/4 text-white my-10 transition-colors ease-in-out hover:border-[#FA9F42] hover:bg-[#FA9F42]">
+                            Все курсы
+                        </button>
                 </div>
             </div>
         </div>
-        <div class="flex my-28  w-full backgroundNotebook ">
-            <div class="w-1/2 my-20">
+        <div class="flex my-28  w-full 	 md:backgroundNotebook  " >
+            <div class="w-1/2 my-20 max-md:hidden">
 
             </div>
-            <div class="w-1/2">
-                <p class="text-5xl my-20 w-3/5">Присоединяйтесь 
+            <div class="md:w-1/2">
+                <p class="text-5xl my-20 w-3/5 max-md:text-xl max-md:mx-auto">Присоединяйтесь 
                     к E-Mentor сейчас</p>
-                <p class="mt-10 w-3/5">Выберите подходящий тариф и формат обучения,  пройдите 2 урока и мы подарим вам дополнительные лекции по любому направлению бесплатно!</p>
-                <button class="border-[#FA9F42] bg-[#FA9F42] rounded-tr-lg text-xl rounded-bl-lg h-14 w-3/6 text-white my-10">
+                <p class="mt-10 w-3/5 max-md:mx-auto">Выберите подходящий тариф и формат обучения,  пройдите 2 урока и мы подарим вам дополнительные лекции по любому направлению бесплатно!</p>
+                <button class="border-[#FA9F42] bg-[#FA9F42] max-md:ml-20 rounded-tr-lg text-xl rounded-bl-lg h-14 w-3/6 text-white my-10">
                     Выбрать тариф
                 </button>
             </div>
         </div>
     </main>
     <footer>
-        <div class="flex border py-10">
-            <div class="w-1/5 ml-20">
-                <img src="./src/img/icon/logotype.svg" class="mb-5 " />
+        <div class="flex border md:py-10 max-md:text-[12px] max-md:grid max-md:grid-cols-2 max-md:ml-2 max-md:items-center ">
+            <div class="md:w-1/5 md:ml-20  ">
+                <img src="./src/img/icon/logotype.svg" class="mb-5  max-md:w-80" />
                 <p class="text-[#353A5A] w-[80%]">Образовательная онлайн-платформа 
                      для развития и тренировки навыков 
                     в сфере информационных технологий</p>
-                <div class="flex mt-10">
+                <div class="flex md:mt-10 max-md:my-4">
                     <a class="w-1/12 mr-6" href="https://facebook.com">
                         <img width="100%"  src="./src/img/icon/Facebook.svg" href="facebook.com"/>
                     </a>
@@ -201,52 +214,42 @@
 
                 </div>
             </div>
-            <div class="w-1/5 ">
+            <div class="md:w-1/5 ">
                 <p class="mb-4">Обучение</p>
                 <p class="mb-2 text-[#353A5A]">Курсы</p>
                 <p class="mb-2 text-[#353A5A]">Вебинары</p>
                 <p class="mb-2 text-[#353A5A]">Тринажеры</p>
                 <p class="mb-2 text-[#353A5A]">Воркшопы</p>                
             </div>
-            <div class="w-1/5">
+            <div class="md:w-1/5">
                 <p class="mb-4">О нас</p>
                 <p class="mb-2 text-[#353A5A]">О платформе</p>
                 <p class="mb-2 text-[#353A5A]">Преподаватели</p>
                 <p class="mb-2 text-[#353A5A]">Тарифы</p>
                 <p class="mb-2 text-[#353A5A]">Отзывы</p> 
             </div>
-            <div class="w-1/5">
+            <div class="md:w-1/5">
                 <p class="mb-4">Контакты</p>
                 <p class="mb-2 text-[#353A5A]">Связаться с нами</p>
                 <p class="mb-2 text-[#353A5A]">Консультация</p>
                 <p class="mb-2 text-[#353A5A]">Реквизиты</p>
                 <p class="mb-2 text-[#353A5A]">Поддержка</p> 
             </div>
-            <div class="w-1/5">
+            <div class="md:w-1/5">
                 <p class="mb-4">Возникли вопросы?</p>
                 <p class="mb-2 text-[#353A5A]">Напиши нам на почту</p>
                 <a class="underline text-[#353A5A] way" href="mailto:education@ementor.info">education@ementor.info</a>
             </div>
         </div>
-        <div class="flex py-10">
-            <p class="w-2/4 ml-20 text-[#353A5A]">E-Mentor © 2021 Все права защищены</p>
+        <div class="flex md:py-10 max-md:text-[10px] max-md:grid">
+            <p class="w-2/4 md:ml-20 text-[#353A5A]">E-Mentor © 2021 Все права защищены</p>
             <p class="w-1/4 text-[#353A5A]">Политика обработки персональных данных</p>
             <p class="w-1/4 text-[#353A5A]">Публичная оферта</p>
         </div>
     </footer>
-    <style>
-        .way:hover{
-            text-decoration-line: underline; 
-            text-decoration-style: wavy; 
-            text-decoration-color: #FA9F42; 
-            text-underline-offset: 6px;
-        }
-        .backgroundNotebook{
-            background-image: url("./src/img/connectEmentor/photo.png");
-            height: 578px;
-        }
-    </style>
+    
     <script>
+
         var navigationMenuBool = false
         function hamburger(){
             if(navigationMenuBool){
